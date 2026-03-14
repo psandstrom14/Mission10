@@ -20,7 +20,7 @@ const BowlerList = () => {
   useEffect(() => {
     const fetchBowlerData = async () => {
       // CRITICAL: Replace 5000 with the actual port your ASP.NET API is running on!
-      const response = await fetch('http://localhost:5000/api/bowlers');
+      const response = await fetch('http://localhost:5296/api/bowlers');
       const data = await response.json();
       setBowlers(data);
     };
